@@ -1,0 +1,168 @@
+@import "mobile-angular-ui/src/less/mobile-angular-ui-base.less";
+@import "mixins.less";
+@import "variables.less";
+
+html,body { height:100%; }
+
+footer{
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*-------- Navbar ---------*/
+
+#navbar-title{
+  color: #496c13;
+}
+
+/*-------- Login Page ---------*/
+
+#login-page-header {
+  margin-top: 0px;
+  text-align:center;
+  background-color: #fff;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.login-container h3 {
+  font-weight: bold;
+  margin: 15px 0 0 0;
+}
+
+.login-container hr {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#login-form-container {
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+}
+
+#login-form-container form input {
+  min-height: 40px;
+}
+
+#login-form-container form div.form-group {
+  text-align: left;
+}
+
+#login-button {
+  margin: 30px auto;
+  text-align: center;
+  width: 50%;
+  min-width: 100px;
+}
+
+.login-error{
+  padding: 5px 0px 5px 10px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+
+/*-------- Payments Page ---------*/
+
+// set background for payment notification section
+#payments-content {
+  // background-color: #CEE9A0;
+  background-color: #fff;
+}
+
+.payment-well{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+i.fa-money {
+  color: green;
+  font-size: 10vw;
+  margin-right: 5px;
+}
+
+.pending {
+  background-color: @payment-pending;
+}
+
+.completed {
+  background-color: @payment-complete;
+}
+
+.payment-company{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.payment-date{
+  font-style: italic;
+}
+
+.payment-status{
+  font-style: italic;
+}
+
+.payment-amount{
+  font-weight: bold;
+}
+
+
+/*-------- About Page ---------*/
+
+.about-well {
+  background-color: #d3e9ae;
+  margin: 30px auto;
+  padding: 19px 25px 19px 25px;
+  width: 80%;
+  text-align: center;
+}
+
+.about-header{
+  margin: 15px 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-infographic-background{
+  background-color: @brand-info;
+}
+
+.footer{
+  margin-top: 50px;
+  text-align: center;
+}
+
+/*-------- Home Page ---------*/
+
+.page-header {
+  text-align: center;  
+}
+
+#home-buttons-container{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#home-buttons-container button {
+  width: 40%;
+  margin: 10px 0;
+}
+
+/*-------- Sidebar Menu ---------*/
+
+#sidebar-logo {
+  margin: auto;
+  text-align:center;
+  background-color: #fff;
+}
+
+.sipree-logo {
+  height: 40px;
+  margin: 5px 0;
+}

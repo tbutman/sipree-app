@@ -1,0 +1,32 @@
+<div ui-content-for="title">
+  <span>Payments</span>
+</div>
+
+<div id="payments-content" class="scrollable" ng-controller="PaymentsController">
+<div class="scrollable-header alert alert-success" role="alert">
+<!--   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
+  Drag right to dismiss payment notification.
+</div>
+ <div class="scrollable-content">
+     <div class="container-fluid">
+       <div class="payments-container">
+         <div class="well payment-well" ng-class="getClass(payment)" ng-repeat="payment in payments"
+           drag-to-dismiss="removePayment(payment)"
+           class="section section-break well">
+           <div class="row" style="display: flex; align-items: center">
+             <div class="col-xs-2">
+                <i class="fa fa-money"></i>
+             </div>
+             <div class="col-xs-10 col-sm-10">
+               <div >Payment to: <span class="payment-company">{{payment.company}}</span></div>
+               <div >Date: <span class="payment-date">{{payment.date}}</span></div>
+               <div >Status: <span class="payment-status">{{payment.status}}</span></div>
+               <div >Amount: <span class="payment-amount">{{payment.amount}}</span></div> 
+             </div>
+           </div> <!-- /.row -->
+         </div> <!-- /.payment-well -->
+       </div>
+     </div>
+     <br/>
+   </div>
+</div>
